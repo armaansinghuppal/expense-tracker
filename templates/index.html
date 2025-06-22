@@ -16,7 +16,7 @@
   <h2>Expenses:</h2>
   <ul>
     {% for expense in expenses %}
-      <li>
+    <li>
         {{ expense.title }} - ${{ expense.amount }}
         <form method="POST" action="/delete/{{expense.primaryId}}">
             <button type="submit" class="remove-btn">Delete Expense</button>
